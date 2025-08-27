@@ -1,60 +1,42 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Body style */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Header style */
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
+/* Banner fade-in */
+#home .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
 }
 
-/* Navigation styles */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Main content styles */
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
+/* Card hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Card styles */
-.card {
-    background-color: #f0f0f0;
-    flex: 1 1 calc(45% - 10px); /* two cards per row */
-    margin: 5px;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-/* Image placeholder style */
 .card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Footer styles */
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Botão hover */
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }

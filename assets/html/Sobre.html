@@ -1,146 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TESTE 1, Página inicial do FCP Health">
-    <meta name="author" content="Adrielli Bertoldo">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-
-    <!-- Código copiado do Google Fonts -->
-    <title>FCB Health</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página inicial do FCB Health Brazil">
+  <meta name="author" content="Adrielli Bertoldo">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Telemedicina, Saúde Digital">
+  <title>FCB Health</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-roboto">
+<body class="font-sans bg-gray-50">
 
-    <!-- Cabeçalho -->
-<header class="bg-gray-800 text-white px-8 py-4 flex justify-between items-center">
-  <!-- Logo -->
-  <div class="flex items-center">
-    <img src="../img/header.png" alt="Logo" class="h-16">
-  </div>
+  <!-- Header -->
+  <header class="bg-gray-500 text-white px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="../img/header.png" alt="Logo FCB Health" class="h-16">
+    </div>
+    <nav class="mb-4 md:mb-0">
+      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm font-medium text-center">
+        <li><a href="#home" class="hover:text-gray-300 transition">Soluções</a></li>
+        <li><a href="#sobre" class="hover:text-gray-300 transition">Sobre</a></li>
+        <li><a href="#contato" class="hover:text-gray-300 transition">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="flex items-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" 
+           alt="Bandeira do Brasil" class="h-10 ml-0 md:ml-4">
+    </div>
+  </header>
 
-  <!-- Navegação -->
-  <nav>
-    <ul class="flex space-x-6 text-sm font-medium">
-      <li>
-        <a href="#" class="hover:text-gray-400 transition-colors">Home</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-gray-400 transition-colors">Sobre</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-gray-400 transition-colors">Contato</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-gray-100 min-h-screen flex items-center justify-center overflow-hidden">
+    <img src="https://ca-times.brightspotcdn.com/dims4/default/9213676/2147483647/strip/true/crop/2430x1366+0+0/resize/1200x675!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F19%2F1d%2Fd5614b7049ffa642aaf38cd8dcb6%2Ftelemed-lead-fam-1.jpeg" 
+         alt="Médicos e pacientes conectados" 
+         class="absolute inset-0 w-full h-full object-cover opacity-50 z-0"/>
+    <div class="text-center relative z-10 px-4 max-w-3xl">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Saúde conectada: seu médico, onde você estiver.</h1>
+      <p class="mt-4 text-base sm:text-lg md:text-xl text-gray-900">
+        Na FCB Health Brazil, conectamos pacientes e médicos através da tecnologia, oferecendo consultas rápidas,
+        monitoramento contínuo e cuidado personalizado. Saúde mais próxima, segura e eficiente, onde quer que você esteja.
+      </p>
+    </div>
+  </section>
 
-    <!-- Banner Principal --> 
-<section class="relative bg-gray-100 h-96 flex items-center justify-center overflow-hidden">
+  <!-- Cards Section -->
+  <section id="sobre" class="p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     
-    <!-- Consulta médica online -->
-    <img src="https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlbWVkaWNpbmUlMjBvbmxpbmUlMjBjb25zdWx0YXRpb24lMjBkb2N0b3J8ZW58MXx8fHwxNzU2MjQ1NTUyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-       alt="Imagem decorativa quadrada"
-       class="absolute left-10 bottom-0 w-64 h-64 opacity-90 object-cover" />
-</div>
-
-    <!-- Conteúdo central -->
-    <div class="text-center relative z-10 px-4">
-        <h1 class="text-4xl font-bold mb-4">Telemedicina e Monitoramento Remoto</h1>
-        <p class="mt-4 text-lg text-gray-700 text-center max-w-xl">
-    Na FCB Health Brazil, conectamos pacientes e médicos através da tecnologia, 
-    facilitando o acesso à saúde e melhorando o acompanhamento médico.
-  </p>
-</div>
-
-    <!-- Imagem dos medicos -->
-    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwbWVkaWNhbCUyMHRlYW18ZW58MXx8fHwxNzU2MjMyMDk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Imagem dos medicos" class="absolute right-10 bottom-0 w-64 opacity-90">
-</section>
-
-<!-- Área de Cards -->
-<section class="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Card 1 -->
-    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1605684954998-685c79d6a018" 
-        alt="Inovação e tecnologia médica" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="font-bold text-xl mb-2">Inovação e tecnologia médica</h2>
-            <p class="text-gray-700">
-                O atendimento a distância garante rapidez e segurança, enquanto o monitoramento remoto acompanha 
-                em tempo real a saúde do paciente, oferecendo cuidado contínuo.
-            <p class="text-gray-700">
-                Essas soluções representam o lado inovador da medicina, unindo tecnologia, eficiência e humanização 
-                no cuidado.
-            </p>
-        </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.Qjd3EMi7DBFy0G5BdJdXwQAAAA?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+           alt="Inovação e tecnologia médica" class="w-full h-48 object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h2 class="font-bold text-xl mb-2">Inovação e Tecnologia Médica</h2>
+        <p class="text-gray-700 mb-2">Atendimento remoto ágil e seguro com monitoramento em tempo real.</p>
+        <p class="text-gray-700 flex-grow">Tecnologia, eficiência e acolhimento para uma saúde inteligente. Inovação que transforma seu cuidado.</p>
+      </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZW1vdGUlMjBwYXRpZW50JTIwbW9uaXRvcmluZyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzU2MjQ1NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Telemedicina" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="font-bold text-xl mb-2">Telemedicina e Monitoramento Remoto</h2>
-            <p class="text-gray-700">
-                A telemedicina conecta pacientes e médicos à distância, com consultas online e dispositivos 
-                vestíveis que monitoram sinais vitais em tempo real.
-            </p>
-            <p class="text-gray-700">
-                Esse avanço facilita o acesso em áreas remotas e aumenta a eficiência no acompanhamento de 
-                pacientes crônicos.
-            </p>
-        </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+      <img src="https://socialmobile.com/wp-content/uploads/2022/11/woman-having-a-video-call-with-her-doctor-2022-10-21-20-57-35-utc-scaled-e1697212940935-300x169.jpg" 
+           alt="Telemedicina" class="w-full h-48 object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h2 class="font-bold text-xl mb-2">Telemedicina e Monitoramento Remoto</h2>
+        <p class="text-gray-700 mb-2">Consultas online com acompanhamento contínuo.</p>
+        <p class="text-gray-700 flex-grow">Nossa plataforma integra dispositivos vestíveis para monitoramento em tempo real, conectando pacientes e médicos de forma eficiente e segura.</p>
+      </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1685061978048-4ffcf2d9acdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWFyYWJsZSUyMGhlYWx0aCUyMG1vbml0b3JpbmclMjBkZXZpY2V8ZW58MXx8fHwxNzU2MjQ1NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Robótica em Cirurgias" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="font-bold text-xl mb-2">Tecnologia que cuida de você.</h2>
-            <p class="text-gray-700">
-                Nossos dispositivos vestíveis monitoram sinais vitais em tempo real e oferecem dados 
-                precisos para decisões mais conscientes sobre seu bem-estar.
-            </p>
-            <p class="text-gray-700">
-                Práticos e de fácil utilização, permitem que o usuário acompanhe seu bem-estar de forma 
-                constante, conectando inovação e cuidado em um único recurso.
-            </p>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+      <img src="https://socialmobile.com/wp-content/uploads/2025/04/WEB_16-9_woman-measure-heart-rate-and-pressure-with-smart-t-2025-03-15-00-03-00-utc.png" 
+           alt="Dispositivos Vestíveis" class="w-full h-48 object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h2 class="font-bold text-xl mb-2">Dispositivos Vestíveis Inteligentes</h2>
+        <p class="text-gray-700 mb-2">Monitoramento contínuo do seu bem-estar.</p>
+        <p class="text-gray-700 flex-grow">Dispositivos práticos e fáceis de usar acompanham sinais vitais em tempo real, unindo inovação e cuidado constante.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contato" class="py-16 bg-cover bg-center" style="background-image: url('https://socialmobile.com/wp-content/uploads/2022/11/RPM-Devices-1024x461.png');">
+    <div class="container mx-auto max-w-lg text-center bg-white bg-opacity-80 p-6 rounded-lg">
+      <h2 class="text-3xl font-bold mb-6">Agende sua consulta</h2>
+      <p class="mb-6 text-gray-700">Preencha os campos abaixo e entraremos em contato com você.</p>
+      <form id="consultaForm" class="space-y-4">
+        <input type="text" id="nome" placeholder="Nome" 
+               class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="email" id="email" placeholder="Email" 
+               class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="tel" id="telefone" placeholder="Telefone" 
+               class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <textarea id="mensagem" placeholder="Mensagem" 
+                  class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Enviar</button>
+      </form>
+      <p id="successMsg" class="mt-4 text-green-600 font-semibold hidden">Consulta agendada com sucesso!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between pb-4 px-6">
+      <div class="mb-4 md:mb-0">
+        <img src="../img/footer.png" alt="FCB Health Brazil" class="h-16">
+      </div>
+      <div class="text-center md:text-right">
+        <div class="mb-2">Entre em contato: <strong>contato@fcphealth.com</strong></div>
+        <div class="flex justify-center md:justify-end space-x-4">
+          <a href="https://www.linkedin.com/company/fcb-health-brazil/" target="_blank" class="hover:text-gray-400">LinkedIn</a>
+          <a href="https://www.instagram.com/fcbhealthbrazil/" target="_blank" class="hover:text-gray-400">Instagram</a>
+          <a href="https://fcbhealth.com.br/index.html" target="_blank" class="hover:text-gray-400">Site Oficial</a>
         </div>
-    </div>
-</section>
-
-    <!-- Footer -->
-<footer class="bg-gray-900 text-white pt-6">
-  <div class="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between pb-4">
-    
-    <!-- Logo -->
-    <div class="mb-4 md:mb-0 md:self-center">
-      <img src="../img/footer.png" alt="FCB Health Brazil" class="h-16">
-    </div>
-
-    <!-- Contact & Links -->
-    <div class="text-center md:text-right">
-      <div class="mb-2">
-        Entre em contato: <strong>contato@fcphealth.com</strong>
-      </div>
-      <div class="flex justify-center md:justify-end space-x-4">
-        <a href="https://www.linkedin.com/company/fcb-health-brazil/" class="hover:text-gray-400" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/fcbhealthbrazil/" class="hover:text-gray-400" target="_blank">Instagram</a>
-        <a href="https://fcbhealth.com.br/index.html" class="hover:text-gray-400" target="_blank">Site Oficial</a>
       </div>
     </div>
-  </div>
+    <div class="bg-gray-500 text-center py-3">
+      <p class="text-sm">&copy; 2025 FCB Health. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-  <!-- Bottom Bar -->
-  <div class="bg-gray-800 text-center py-3">
-    <p class="text-sm">&copy; 2025 FCB Health. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-    <script>
-        <h3>Feito com 😽 por Adrielli Bertoldo - 2025</h3>
-    </script>
-</body>
-</html>
-
+  <script src="script.js"></script>
+</
