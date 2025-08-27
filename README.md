@@ -30,13 +30,13 @@ Nosso objetivo é tornar a saúde **mais próxima, segura e eficiente**, onde qu
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/Adrielli-Bertoldo/teste1.git
    ```
 
 2. Abra a pasta do projeto:
 
    ```bash
-   cd NOME-DO-REPOSITORIO
+   cd https://github.com/Adrielli-Bertoldo/teste1.git
    ```
 
 3. Abra o arquivo **index.html** no navegador.
