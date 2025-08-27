@@ -49,8 +49,3 @@ Você pode acessar o projeto publicado através do **GitHub Pages**:
 ---
 
 😺 Desenvolvido por **Adrielli Bertoldo**
-
-```
-
----
-
