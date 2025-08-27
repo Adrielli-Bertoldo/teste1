@@ -1,9 +1,22 @@
-html {
+html { 
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hierarquia de pesos */
+h1, h2 {
+    font-weight: 700; /* títulos fortes */
+}
+
+h3, h4 {
+    font-weight: 500; /* subtítulos */
+}
+
+p, li, input, textarea, button {
+    font-weight: 400; /* textos padrão */
 }
 
 /* Banner fade-in */
