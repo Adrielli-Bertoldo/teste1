@@ -32,24 +32,6 @@
 </head>
 <body class="font-sans bg-gray-50">
 
-  <!-- Header -->
-  <header class="bg-gray-500 text-white px-6 py-4 flex flex-col md:flex-row justify-between items-center">
-    <div class="flex items-center mb-4 md:mb-0">
-      <img src="assets/img/header.png" alt="Logo FCB Health" class="h-16">
-    </div>
-    <nav class="mb-4 md:mb-0">
-      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm font-medium text-center">
-        <li><a href="#home" class="hover:text-gray-300 transition">Soluções</a></li>
-        <li><a href="#sobre" class="hover:text-gray-300 transition">Sobre</a></li>
-        <li><a href="#contato" class="hover:text-gray-300 transition">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="flex items-center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" 
-          alt="Bandeira do Brasil" class="h-10 ml-0 md:ml-4">
-    </div>
-  </header>
-
 <header class="bg-gray-500 text-white px-6 py-4 flex flex-col md:flex-row justify-between items-center">
   <div class="flex items-center mb-4 md:mb-0">
     <img src="assets/img/header.png" alt="Logo FCB Health" class="h-16">
@@ -57,8 +39,8 @@
   <nav class="mb-4 md:mb-0">
     <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm font-medium text-center">
       <li><a href="index.html" class="hover:text-gray-300 transition">Início</a></li>
-      <li><a href="Sobre.html" class="hover:text-gray-300 transition">Sobre</a></li>
-      <li><a href="Contato.html" class="hover:text-gray-300 transition">Contato</a></li>
+      <li><a href="sobre.html" class="hover:text-gray-300 transition">Sobre</a></li>
+      <li><a href="contato.html" class="hover:text-gray-300 transition">Contato</a></li>
     </ul>
   </nav>
   <div class="flex items-center">
@@ -66,13 +48,27 @@
   </div>
 </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-gray-100 min-h-screen flex items-center justify-center overflow-hidden">
+    <img src="https://ca-times.brightspotcdn.com/dims4/default/9213676/2147483647/strip/true/crop/2430x1366+0+0/resize/1200x675!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F19%2F1d%2Fd5614b7049ffa642aaf38cd8dcb6%2Ftelemed-lead-fam-1.jpeg" 
+         alt="Médicos e pacientes conectados" 
+         class="absolute inset-0 w-full h-full object-cover opacity-50 z-0"/>
+    <div class="text-center relative z-10 px-4 max-w-3xl fade-in">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Saúde conectada: seu médico, onde você estiver.</h1>
+      <p class="mt-4 text-base sm:text-lg md:text-xl text-gray-900 font-normal">
+        Na FCB Health Brazil, conectamos pacientes e médicos através da tecnologia, oferecendo consultas rápidas,
+        monitoramento contínuo e cuidado personalizado. Saúde mais próxima, segura e eficiente, onde quer que você esteja.
+      </p>
+    </div>
+  </section>
+
   <!-- Cards Section -->
   <section id="sobre" class="p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     
     <!-- Card 1 -->
     <div class="card bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
       <img src="https://tse4.mm.bing.net/th/id/OIP.Qjd3EMi7DBFy0G5BdJdXwQAAAA?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" 
-          alt="Inovação e tecnologia médica" class="w-full h-48 object-cover">
+           alt="Inovação e tecnologia médica" class="w-full h-48 object-cover">
       <div class="p-4 flex flex-col flex-grow">
         <h2 class="font-semibold text-xl mb-2">Inovação e Tecnologia Médica</h2>
         <p class="text-gray-700 mb-2 font-normal">Atendimento remoto ágil e seguro com monitoramento em tempo real.</p>
@@ -95,7 +91,7 @@
     <!-- Card 3 -->
     <div class="card bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
       <img src="https://socialmobile.com/wp-content/uploads/2025/04/WEB_16-9_woman-measure-heart-rate-and-pressure-with-smart-t-2025-03-15-00-03-00-utc.png" 
-          alt="Dispositivos Vestíveis" class="w-full h-48 object-cover">
+           alt="Dispositivos Vestíveis" class="w-full h-48 object-cover">
       <div class="p-4 flex flex-col flex-grow">
         <h2 class="font-semibold text-xl mb-2">Dispositivos Vestíveis Inteligentes</h2>
         <p class="text-gray-700 mb-2 font-normal">Monitoramento contínuo do seu bem-estar.</p>
@@ -116,9 +112,9 @@
         <input type="email" id="email" placeholder="Email" 
                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600 font-normal">
         <input type="tel" id="telefone" placeholder="Telefone" 
-              class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600 font-normal">
+               class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600 font-normal">
         <textarea id="mensagem" placeholder="Mensagem" 
-              class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600 font-normal"></textarea>
+                  class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600 font-normal"></textarea>
         <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition font-medium">Enviar</button>
       </form>
       <p id="successMsg" class="mt-4 text-green-600 font-semibold hidden">Consulta agendada com sucesso!</p>
