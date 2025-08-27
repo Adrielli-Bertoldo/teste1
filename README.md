@@ -15,12 +15,6 @@ Nosso objetivo é tornar a saúde **mais próxima, segura e eficiente**, onde qu
 - **JavaScript** → interatividade  
 - **Tailwind CSS** → design moderno e responsivo  
 
-## 📷 Pré-visualização
-
-![Preview do site](./assets/preview.png)
-
-> *Exemplo da interface inicial do projeto, mostrando navegação simples e design responsivo.*
-
 ## 📂 Estrutura do projeto
 
 ```bash
