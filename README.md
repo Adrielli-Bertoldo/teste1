@@ -48,11 +48,9 @@ Você pode acessar o projeto publicado através do **GitHub Pages**:
 
 ---
 
-👩‍💻 Desenvolvido por **Adrielli Bertoldo**
+😺 Desenvolvido por **Adrielli Bertoldo**
 
 ```
 
 ---
 
-Quer que eu já adapte esse **README.md** com o link real do seu **GitHub Pages** (quando você me passar o nome do repositório), para deixar pronto e funcional?
-```
